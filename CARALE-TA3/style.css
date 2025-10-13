@@ -88,4 +88,21 @@ img {
 }
     section {
         padding: 15px;
-    }
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #333;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+footer hr {
+  border: none;
+  margin-bottom: 15px;
+}
+.footer-heading {
+  font-size: 1em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
