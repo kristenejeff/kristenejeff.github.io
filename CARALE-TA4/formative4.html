@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Data - Works of a B444ndit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Process</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Shopcart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>User Information</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID Number</th>
+          <th>First Name</th>
+          <th>Middle Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Birthday</th>
+        </tr>
+      </thead>
+      <tbody id="userData"></tbody>
+    </table>
+  </main>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("userData"));
+    if (data) {
+      document.getElementById("userData").innerHTML = `
+        <tr>
+          <td>${data.id}</td>
+          <td>${data.firstName}</td>
+          <td>${data.middleName}</td>
+          <td>${data.lastName}</td>
+          <td>${data.gender}</td>
+          <td>${data.birthday}</td>
+        </tr>
+      `;
+    }
+  </script>
+</body>
+</html>

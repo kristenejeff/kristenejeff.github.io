@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works of a B444ndit - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Process</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Shopcart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Works of a B444ndit</h1>
+    <form id="loginForm">
+      <label>ID Number: <input type="text" name="id" required /></label>
+      <label>First Name: <input type="text" name="firstName" required /></label>
+      <label>Middle Name: <input type="text" name="middleName" /></label>
+      <label>Last Name: <input type="text" name="lastName" required /></label>
+      <label>Gender:
+        <select name="gender" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <label>Birthday: <input type="date" name="birthday" required /></label>
+      <button type="submit">Save</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
