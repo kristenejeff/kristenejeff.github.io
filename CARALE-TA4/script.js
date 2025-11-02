@@ -10,5 +10,5 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     birthday: formData.get("birthday"),
   };
   localStorage.setItem("userData", JSON.stringify(userData));
-  window.location.href = "display.html";
+  window.location.href = "formative4.html";
 });
